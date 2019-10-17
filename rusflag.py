@@ -8,6 +8,9 @@ def run_game():
     sc.fill(bg_color)
     # флэшток фигуры
     pygame.draw.rect(sc, (255, 155, 0), (52, 18, 10, 420))
+
+    # белая часть фигуры
+    pygame.draw.rect(sc, (255, 255, 255), (52, 20, 340, 80))
     pygame.display.flip()
     while True:
         for event in pygame.event.get():
